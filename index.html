@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JqUeRy IZ UR FrAnD!!!!!~*!~</title>
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+<!--SO I CAN MAKE EVERY SINGLE BOOTSTRAP SITE EVERRRR!-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+    <!--CSS Styling-->
+    <style>
+        body {
+            text-align: center;
+            /*the background color should always have the best color selected*/
+            background-color: blanchedalmond;
+            font-family: monospace;
+        }
+        
+        h2 {
+            text-decoration: underline;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <jumbotron>
+        <!--jumbotrons are fun! and I like cats!-->
+        <img src="http://i.huffpost.com/gen/1718649/thumbs/o-CAT-COMPUTER-facebook.jpg" width="100%" height="100%">
+    </jumbotron>
+    <!--Let's use Bootstrap's grid to compare!-->
+    <div class="container">
+        <div class="row">
+            <!--two columns. columns must always add to 12-->
+            <div class="col-md-6" id="before">
+                <!--this column will hold before() and prepend() -->
+                <h1>Let's start at the very BEGINNING</h1>
+                <sub>The Sound of Music</sub>
+                <!--When you sing, you begin with do-re-mi-->
+                <h2>Before</h2>
+                <i>Inserts content before selected elements</i>
+                <br><br> 
+                Adds new content as <b>sibling elements</b>
+                <br><br>
+                <button id="button1">
+                    Insert content before each p element with class 'beforep'
+                </button>
+                <br>
+                <p class="beforep">
+                    dis a p element with class 'beforep'
+                </p>
+                <p class="beforep">
+                    dis also a p element with class 'beforep'
+                </p>
+                <!--Sibling Pictures-->
+                <img src="https://s-media-cache-ak0.pinimg.com/564x/49/ee/cd/49eecd462dcde7f4c75cd7ef699cb2de.jpg" alt="aww">
+            </div>
+
+            <div class="col-md-6" id="after">
+                <!--this column will hold after() and append()-->
+                <h1>BUT IN THE END IT DOESNT EVEN MAAATTER</h1>
+                <sub>Linkin Park DUH</sub>
+                <!--at least it's not Nickelback-->
+                <h2>After</h2>
+                <i>Inserts content after selected elements</i>
+                <br><br> Adds new content as <b>sibling elements</b>
+                <br><br>
+                <button id="button2">
+                    Insert content after each p element with class 'afterp'
+                </button>
+                <br>
+                <p class="afterp">
+                    Dis a p element with class 'afterp'
+                </p>
+                <p class="afterp">
+                    Dis a p element with class 'afterp'
+                </p>
+                <br>
+                <!--Sibling Pictures-->
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/37/98/be/3798beaa35305a053371960201add77b.jpg" width="75%" height="75%" alt="aww">
+                <br>
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/cd/e3/04/cde304b4c131b5a6950c23e292ecadea.jpg" width="75%" height="75%" alt="aww">
+            </div>
+        </div>
+        <!--create new row -->
+        <div class="row">
+            <div class="col-md-6" id="prepend">
+                <h2>Prepend</h2>
+                <i>Inserts content at the beginning of selected elements</i>
+                <br><br> 
+                Adds new content as <b>child elements</b>
+                <br><br>
+                <button id="button3">
+                    Click to prepend to p element with class 'prependp'
+                </button>
+                <br>
+                <p class="prependp">
+                    This is a p element with 'prependp'
+                </p>
+                <p class="prependp">
+                    This is a p element with 'prependp'
+                </p>
+                <br>
+                <!--Parent/Child Pictures-->
+                <img src="http://www.lovethesepics.com/wp-content/uploads/2013/05/Baby-hippo-telling-mom-a-story.jpg" width="75%" height="75%" alt="aww">
+                <img src="http://www.rd.com/wp-content/uploads/sites/2/2016/03/amazing-moms-panda-bears.jpg" width="75%" height="75%" alt="aww">
+            </div>
+            <div class="col-md-6" id="append">
+                <h2>Append</h2>
+                <i>Inserts content at the end of selected elements</i>
+                <br><br>
+                Adds new content as <b>child elements</b>
+                <br><br>
+                <button id="button4">
+                    Click to append to p element with class 'appendp'
+                </button>
+                <br>
+                <p class="appendp">
+                    This is a p element with 'appendp'
+                </p>
+                <p class="appendp">
+                    This is a p element with 'appendp'
+                </p>
+                <br>
+                <!--Parent/Child Pictures-->
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/70/b5/83/70b583c6e91a3a5915856400ef6c9383.jpg" width="75%" height="75%" alt="aww">
+                <img src="http://i.huffpost.com/gen/1590521/images/o-BABY-ANIMALS-facebook.jpg" width="75%" height="75%" alt="aww">
+            </div>
+        </div>
+    </div>
+    
+    <!--screenshots of jquery script code and HTML-->
+    <div id="code">
+        <h1>Let's look at some code!</h1>
+        <img src="./jqcode.png" width="75%" height="75%" alt="coded">
+        <br>
+        <img src="./jqcode2.png" width="75%" height="75%" alt="coded">
+    </div>
+
+    <!--Only one Jeff this time :(-->
+    <img src="./catgoldblum.png" alt="kittycat GoldBLUM!">
+    
+    
+    <!--REPRESENT!-->
+    <footer>&copy; 2017 CROUP CROUTON - <i> Blanch&eacute; d'Almond Industries</i></footer>
+
+    <script>
+        // click listeners on buttons --> pictures in DOM
+        $(document).ready(function () {
+//before       
+            $("#button1").click(function () {
+                $("p.beforep").before("<img src='http://orig07.deviantart.net/f5d7/f/2013/238/e/6/nyan_cat_pixel_art_by_miniman487-d6jvjul.png' width='10%' height='10%' alt='fun'>");
+            });
+//after
+            $("#button2").click(function () {
+                $("p.afterp").after("<img src='./gir.png' width='10%' height='10%' alt='fun'>");
+            });
+//prepend
+            $("#button3").click(function () {
+                $("p.prependp").prepend("<img src='https://38.media.tumblr.com/a5f012a2bc5a5f612c592a71c09713a3/tumblr_mrnj1lGkXQ1rfjowdo1_500.gif' width='10%' height='10%' alt='fun'>");
+            });
+// append
+            $("#button4").click(function () {
+                $("p.appendp").append("<img src='https://media.giphy.com/media/exnOGAkUfpQVW/giphy.gif' width='10%' height='10%' alt='fun'>");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
