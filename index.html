@@ -38,7 +38,16 @@
         h2 {
             text-decoration: underline;
         }
-        
+       button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        } 
     </style>
 
 </head>
@@ -48,6 +57,7 @@
         <!--jumbotrons are fun! and I like cats!-->
         <img src="http://i.huffpost.com/gen/1718649/thumbs/o-CAT-COMPUTER-facebook.jpg" width="100%" height="100%">
     </jumbotron>
+
     <!--Let's use Bootstrap's grid to compare!-->
     <div class="container">
         <div class="row">
@@ -63,7 +73,7 @@
                 Adds new content as <b>sibling elements</b>
                 <br><br>
                 <button id="button1">
-                    Insert content before each p element with class 'beforep'
+                    Insert content before p element w/ class 'beforep'
                 </button>
                 <br>
                 <p class="beforep">
@@ -78,7 +88,7 @@
 
             <div class="col-md-6" id="after">
                 <!--this column will hold after() and append()-->
-                <h1>BUT IN THE END IT DOESNT EVEN MAAATTER</h1>
+                <h1>BUT IN THE END IT DOESN'T EVEN MAAATTER</h1>
                 <sub>Linkin Park DUH</sub>
                 <!--at least it's not Nickelback-->
                 <h2>After</h2>
@@ -86,14 +96,14 @@
                 <br><br> Adds new content as <b>sibling elements</b>
                 <br><br>
                 <button id="button2">
-                    Insert content after each p element with class 'afterp'
+                    Insert content after p elements w/ class 'afterp'
                 </button>
                 <br>
                 <p class="afterp">
-                    Dis a p element with class 'afterp'
+                    dis a p element with class 'afterp'
                 </p>
                 <p class="afterp">
-                    Dis a p element with class 'afterp'
+                    dis a p element with class 'afterp'
                 </p>
                 <br>
                 <!--Sibling Pictures-->
@@ -111,7 +121,7 @@
                 Adds new content as <b>child elements</b>
                 <br><br>
                 <button id="button3">
-                    Click to prepend to p element with class 'prependp'
+                    Click to prepend to p element w/ class 'prependp'
                 </button>
                 <br>
                 <p class="prependp">
@@ -131,8 +141,8 @@
                 <br><br>
                 Adds new content as <b>child elements</b>
                 <br><br>
-                <button id="button4">
-                    Click to append to p element with class 'appendp'
+                <button id="button4" >
+                    Click to append to p element w/ class 'appendp'
                 </button>
                 <br>
                 <p class="appendp">
@@ -187,5 +197,4 @@
 
     </script>
 </body>
-
 </html>
